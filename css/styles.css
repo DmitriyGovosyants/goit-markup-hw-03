@@ -1,23 +1,24 @@
 /* *Variable */
 
 :root {
+  --title-primary-color: #ffffff;
+  --title-secondary-color: #212121;
+
   --text-primary-color: #757575;
   --text-secondary-color: #212121;
   --text-tertiary-color: #ffffff;
   --accent-color: #2196f3;
+
+  --background-primary: #ffffff;
+  --background-secondary: #2f303a;
 
   --logo-second-part-header: #000000;
   --logo-second-part-footer: #ffffff;
 
   --contacts-footer: rgba(255, 255, 255, 0.6);
 
-  --background-primary: #ffffff;
-  --background-secondary: #2f303a;
-
   --background-hero-btn-hvr: #188ce8;
-  --border-hero-btn: #000000;
-  --text-shadow-hero-btn: rgba(0, 0, 0, 0.25);
-  --background-preview-btn: #f5f4fa;
+  --background-filter-btn: #f5f4fa;
 }
 
 /* *Basic Elements */
@@ -46,7 +47,7 @@ body {
   text-decoration: none;
 }
 
-.link.current {
+.header-nav-link.current {
   color: var(--accent-color);
 }
 
@@ -57,57 +58,35 @@ body {
   color: var(--accent-color);
 }
 
-.logo-nav {
+.nav-logo {
   color: var(--logo-second-part-header);
 }
 
-.logo-footer {
+.footer-logo {
   color: var(--logo-second-part-footer);
 }
 
 /* *Header*/
 
-.nav-list-link,
-.contacts-list-link {
+.header-nav-link,
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
-.nav-list-link {
+.header-nav-link {
   color: var(--text-secondary-color);
 }
 
-.contacts-list-link {
+.contacts-link {
   color: inherit;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
-.contacts-list-link:hover,
-.contacts-list-link:focus {
-  color: var(--accent-color);
-}
-
-/* *Footer */
-
-.address-item {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: inherit;
-}
-
-.address-link {
-  color: var(--text-tertiary-color);
-}
-
-.address-contact {
-  color: var(--contacts-footer);
-}
-
-.address-contact:focus,
-.address-contact:hover {
+.header-nav-link:hover,
+.header-nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -119,7 +98,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-tertiary-color);
+  color: var(--title-primary-color);
   text-align: center;
 }
 
@@ -132,33 +111,30 @@ body {
   color: var(--text-tertiary-color);
 
   background: var(--accent-color);
-  border: 0px;
+  border: 1px transparent;
   border-radius: 4px;
+  box-shadow: 20px;
 
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  text-shadow: 0 4px 4px var(--text-shadow-hero-btn);
-
   background-color: var(--background-hero-btn-hvr);
-  outline: 1px solid var(--border-hero-btn);
-  outline-offset: -1px;
 }
 
 .features-list {
   font-size: 14px;
 }
 
-.features-list-title {
+.features-item-title {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--text-secondary-color);
+  color: var(--title-secondary-color);
 }
 
-.features-list-text {
+.features-item -text {
   line-height: 1.71;
 }
 
@@ -167,17 +143,17 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  color: var(--text-secondary-color);
+  color: var(--title-secondary-color);
 }
 
 .teams-list {
   font-size: 16px;
 }
 
-.teams-list-title {
+.teams-item-title {
   font-weight: 500;
   font-size: 16px;
-  color: var(--text-secondary-color);
+  color: var(--title-secondary-color);
 }
 
 /* *Content portfolio */
@@ -190,7 +166,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
 
-  background-color: var(--background-preview-btn);
+  background-color: var(--background-filter-btn);
   border: 0px;
   border-radius: 4px;
 
@@ -216,5 +192,27 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-secondary-color);
+  color: var(--title-secondary-color);
+}
+
+/* *Footer */
+
+.address-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: inherit;
+}
+
+.address-link {
+  color: var(--text-tertiary-color);
+}
+
+.address-contact {
+  color: var(--contacts-footer);
+}
+
+.address-contact:focus,
+.address-contact:hover {
+  color: var(--accent-color);
 }
