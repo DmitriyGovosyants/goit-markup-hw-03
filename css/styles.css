@@ -98,7 +98,6 @@ img {
 }
 
 .logo-inner {
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -143,6 +142,7 @@ img {
 
 .nav-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .contacts-list {
@@ -261,10 +261,6 @@ img {
 
 .about-item + .about-item {
   margin-left: 30px;
-}
-
-.about-item {
-  margin-bottom: 0;
 }
 
 .teams {
