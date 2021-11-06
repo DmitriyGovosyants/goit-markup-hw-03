@@ -75,6 +75,27 @@ p {
   color: var(--title-secondary-color);
 }
 
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-color);
+}
+
+.logo-inner {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-logo-color {
+  color: var(--logo-second-part-header);
+}
+
+.footer-logo-color {
+  color: var(--logo-second-part-footer);
+}
+
 .no-gap {
   display: block;
 }
@@ -117,21 +138,6 @@ p {
 .nav {
   display: flex;
   align-items: center;
-}
-
-.header-logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--accent-color);
-}
-
-.header-logo-part {
-  color: var(--logo-second-part-header);
 }
 
 .nav-list {
@@ -377,17 +383,6 @@ p {
   padding-bottom: 60px;
 
   background-color: var(--background-secondary);
-}
-
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--accent-color);
-}
-
-.footer-logo-part {
-  color: var(--logo-second-part-footer);
 }
 
 .address {
