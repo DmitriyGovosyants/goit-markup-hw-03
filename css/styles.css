@@ -186,7 +186,6 @@ p {
   padding: 10px 32px;
   min-width: 200px;
 
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -304,7 +303,6 @@ p {
 .filter-btn {
   padding: 6px 22px;
 
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
