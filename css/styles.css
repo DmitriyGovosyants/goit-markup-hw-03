@@ -43,6 +43,15 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 /* Basic Layout -------------------------------------------------------------- */
 
 .container {
@@ -98,16 +107,6 @@ p {
 
 .no-gap {
   display: block;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .visually-hidden {
