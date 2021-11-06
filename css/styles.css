@@ -52,6 +52,12 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Basic Layout -------------------------------------------------------------- */
 
 .container {
@@ -103,10 +109,6 @@ ul {
 
 .footer-logo-color {
   color: var(--logo-second-part-footer);
-}
-
-.no-gap {
-  display: block;
 }
 
 .visually-hidden {
